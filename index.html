@@ -1,103 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Emmelie Johansson | Java Developer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@600&family=PT+Sans&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      background-color: #10101A;
-      color: #E0E0E0;
-      font-family: 'PT Sans', sans-serif;
-    }
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Emmelie Johansson | Fullstack Developer Java</title>
+        <link href="style.css" rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Exo+2:wght@700&family=PT+Sans&display=swap"
+            rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#education">Education</a>
+                <a href="#projects">Projects</a>
+                <a class="nav-button" href="#contact">Contact</a>
+            </nav>
+            <div class="header-wrapper">
+                <div class="header-text-column">
+                    <div class="header-text-wrapper">
+                        <p class="hero-text">Hi, I'm</p>
+                        <h1>Emmelie Johansson</h1>
+                        <p class="hero-text">a Junior Fullstack Java Developer
+                            based in Leipzig, Germany</p>
+                    </div>
+                    <div class="button-wrapper">
+                        <button class="contact-button">Contact me</button>
+                        <button class="portfolio-button">See my work</button>
+                    </div>
 
-    header {
-      padding: 2rem;
-      text-align: center;
-    }
+                    <div class="social-icons-wrapper">
+                        <img class="social-icon" src="./img/github.svg"
+                            alt="GitHub Profile">
+                        <img class="social-icon" src="./img/gitlab.svg"
+                            alt="GitLab Profile">
+                        <img class="social-icon" src="./img/linkedin.svg"
+                            alt="LinkedIn Profile">
+                    </div>
+                </div>
+                <div>
+                    <img class="profile-picture" src="./img/profile-picture.jpg"
+                        alt="Profile picture of Emmelie Johansson">
+                </div>
+            </div>
+        </header>
 
-    h1, h2, h3 {
-      font-family: 'Exo 2', sans-serif;
-      color: #D3929F;
-      margin: 0.5rem 0;
-    }
+        <main>
+                <section id="about">
+                    <h2>About</h2>
+                    <p>I am a former translator with a passion for languages and communication, now embarking on an exciting journey into the world of technology. Currently, I am in the final stages of my IT education, with a focus on Java, web development, and agile methodologies.</p>
+                    <p>As I transition into this field, I am eager to combine my linguistic expertise with technical skills to build user-friendly applications and websites. I enjoy working in collaborative teams and look forward to contributing my unique background to creating innovative and meaningful projects.</p>
+                </section>
+        <section id="education">
+            <h2>Education</h2>
+            <p>I’m a Fullstack Java Developer with a love for clean code,
+                elegant UI, and lifelong learning. I combine strong technical
+                skills with a collaborative mindset and a passion for intuitive
+                user experiences.</p>
+        </section>
 
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 1.5rem;
-      margin-top: 1rem;
-    }
+        <section id="projects">
+            <h2>Projects</h2>
+            <p>From Spring Boot APIs to responsive Vue.js frontends — I enjoy
+                building tools that solve real-world problems and bring value to
+                users.</p>
+        </section>
 
-    nav a {
-      color: #D3929F;
-      text-decoration: none;
-      font-weight: bold;
-    }
+        <section id="contact">
+            <h2>Get in Touch</h2>
+            </div>
+        </section>
 
-    section {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 1rem;
-    }
+        </main>
+        <footer>
+            <p>Copyright © 2025 Emmelie Johansson </p>
+            <div class="social-icons-wrapper">
+                <img class="social-icon" src="./img/github.svg"
+                    alt="GitHub Profile">
+                <img class="social-icon" src="./img/gitlab.svg"
+                    alt="GitLab Profile">
+                <img class="social-icon" src="./img/linkedin.svg"
+                    alt="LinkedIn Profile">
+            </div>
+        </footer>
+    </body>
 
-    .cta-button {
-      background-color: #D3929F;
-      color: #10101A;
-      padding: 0.75rem 1.5rem;
-      border: none;
-      font-family: 'Exo 2', sans-serif;
-      font-weight: bold;
-      border-radius: 8px;
-      cursor: pointer;
-    }
-
-    .icons {
-      display: flex;
-      gap: 1rem;
-      justify-content: center;
-      margin-top: 2rem;
-    }
-
-    .icon {
-      width: 40px;
-      height: 40px;
-      fill: #585C64;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Emmelie Johansson</h1>
-    <h2>Java Developer & Tech Enthusiast</h2>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <section id="about">
-    <h3>About Me</h3>
-    <p>I’m a Fullstack Java Developer with a love for clean code, elegant UI, and lifelong learning. I combine strong technical skills with a collaborative mindset and a passion for intuitive user experiences.</p>
-  </section>
-
-  <section id="projects">
-    <h3>Projects</h3>
-    <p>From Spring Boot APIs to responsive Vue.js frontends — I enjoy building tools that solve real-world problems and bring value to users.</p>
-    <button class="cta-button">See My Work</button>
-  </section>
-
-  <section id="contact">
-    <h3>Get in Touch</h3>
-    <p>Let’s connect — whether you have a project in mind or just want to chat tech.</p>
-    <div class="icons">
-      <!-- You can replace with real SVGs or icons as needed -->
-      <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" /></svg>
-      <svg class="icon" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" /></svg>
-    </div>
-  </section>
-</body>
 </html>
