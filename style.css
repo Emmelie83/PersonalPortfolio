@@ -67,7 +67,8 @@ nav a {
     text-decoration: none;
 }
 
-a.nav-button {
+a.nav-button,
+.contact-button {
     background-color: #D3929F;
     border-color: #D3929F;
     color: #10101A;
@@ -95,28 +96,19 @@ a.nav-button {
 .button-wrapper {
     display: flex;
     gap: 1rem;
-
 }
 
-.contact-button {
-    background-color: #D3929F;
-    border-color: #D3929F;
-    color: #10101A;
-}
-
-
-.portfolio-button {
+.portfolio-button,
+.contact-form button {
     background-color: #10101A;
     color: #E0E0E0;
     border: #E0E0E0 2px solid;
 }
 
-
 .social-icons-wrapper {
     display: flex;
     gap: 1.5rem;
 }
-
 
 .social-icon {
     width: 40px;
@@ -129,13 +121,16 @@ a.nav-button {
 }
 
 main {
-    margin: 0 8rem;
+    margin: 0rem 8rem 5rem 8rem;
 }
 
 section {
-    max-width: 700px;
-    margin-bottom: 8rem;
+    padding: 1rem 0;
     line-height: 2rem;
+}
+
+#about {
+    max-width: 800px;
 }
 
 .timeline {
@@ -179,8 +174,8 @@ section {
     margin-left: 1.5rem;
 }
 
-#skills {
-    margin: 6rem 0;
+.more-text {
+    margin-left: 1rem;
 }
 
 .skills-wrapper {
@@ -207,47 +202,84 @@ section {
     display: none;
 }
 
-.more-text {
-    color: #585C64;
-    margin-left: 1rem;
+.work-period {
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+}
+
+.work-wrapper h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.work-wrapper p {
+    margin: 0.2rem 0;
+    max-width: 300px;
+}
+
+#rovarspraket {
+    max-width: 500px;
+    margin: 1rem;
+}
+
+#baktakt {
+    max-width: 300px;
+}
+
+.contact-section-wrapper {
+    display: flex;
+    gap: 5rem;
+    padding: 4rem 12rem 2rem 0;
+}
+
+.contact-information {
+    flex: 1;
 }
 
 .contact-form {
+    max-width: 500px;
+    flex: 2;
+    min-width: 400px;
     display: flex;
     flex-direction: column;
-    max-width: 500px;
-    margin: 2rem auto;
     gap: 1rem;
 }
 
 .contact-form input,
 .contact-form textarea {
-    padding: 0.75rem;
-    border: 1px solid #ccc;
-    border-radius: 0.4rem;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #E0E0E0;
+    padding: 0.5rem 0;
+    color: #E0E0E0;
     font-size: 1rem;
+    outline: none;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #585C64;
 }
 
 .contact-form button {
-    padding: 0.75rem;
-    border: none;
-    background-color: #1A1A2A;
-    color: white;
-    font-size: 1rem;
-    border-radius: 0.4rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    align-self: flex-end;
 }
 
-.contact-form button:hover {
-    filter: brightness(1.1);
+#phone,
+#mail {
+    padding: 0;
+    margin: 0;
 }
+
+
 
 footer {
-    font-size: 14px;
+    font-size: 16px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
     margin-bottom: 2rem;
+    padding-top: 2rem;
 }

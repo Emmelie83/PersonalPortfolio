@@ -5,7 +5,7 @@ function toggleDescription() {
         button.addEventListener("click", () => {
             const description = button.nextElementSibling;
             description.classList.toggle("hidden");
-            button.textContent = description.classList.contains("hidden") ? "+ More" : "- Less";
+            button.textContent = description.classList.contains("hidden") ? "Read more ..." : "Collapse";
         });
     });
 }
