@@ -30,8 +30,8 @@ h3 {
     margin-bottom: 1rem;
 }
 
-button,
-a.nav-button {
+.transparent-button,
+.color-button {
     text-transform: uppercase;
     padding: 15px 30px;
     font-family: 'PT Sans', sans-serif;
@@ -40,10 +40,11 @@ a.nav-button {
     cursor: pointer;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
     transition: box-shadow 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
 }
 
 button:hover,
-a.nav-button:hover {
+a.color-button:hover {
     transform: translateY(-4px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
     filter: brightness(1.3);
@@ -67,8 +68,7 @@ nav a {
     text-decoration: none;
 }
 
-a.nav-button,
-.contact-button {
+a.color-button {
     background-color: #D3929F;
     border-color: #D3929F;
     color: #10101A;
@@ -98,7 +98,7 @@ a.nav-button,
     gap: 1rem;
 }
 
-.portfolio-button,
+.transparent-button,
 .contact-form button {
     background-color: #10101A;
     color: #E0E0E0;
@@ -125,7 +125,8 @@ main {
 }
 
 section {
-    padding: 1rem 0;
+    padding: .5rem 0;
+    margin-bottom: 2rem;
     line-height: 2rem;
 }
 
@@ -216,14 +217,80 @@ section {
     margin: 0.2rem 0;
     max-width: 300px;
 }
-
-#rovarspraket {
-    max-width: 500px;
-    margin: 1rem;
+.projects-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    padding-top: 2rem;
 }
 
-#baktakt {
-    max-width: 300px;
+.project {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.project.reverse {
+    direction: rtl;
+}
+
+.project.reverse>* {
+    direction: ltr;
+}
+
+.device-frame-light {
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 0.5rem;
+    background: #f8f8f8;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.device-screen-light {
+    width: 100%;
+    max-width: 600px;
+    min-width: 300px;
+    aspect-ratio: 16 / 10;
+    border-radius: 4px;
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid #ddd;
+}
+
+.device-screen-light img,
+.device-screen-light iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border: none;
+}
+
+.mobile-frame-light {
+    display: inline-block;
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 24px;
+    background: #f8f8f8;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    max-width: 320px;
+}
+
+.mobile-screen-light {
+    aspect-ratio: 9 / 19.5;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid #ddd;
+}
+
+.mobile-screen-light img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border: none;
 }
 
 .contact-section-wrapper {
@@ -283,3 +350,38 @@ footer {
     margin-bottom: 2rem;
     padding-top: 2rem;
 }
+
+.toggle-container {
+    border: none;
+    padding: 0.5rem;
+    width: 300px;
+}
+
+.toggle-button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    margin-left: .5rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    color: #E0E0E0;
+}
+
+.toggle-button.active {
+    transform: rotate(45deg);
+    /* turns + into an x */
+}
+
+.toggle-content {
+    margin-top: 1rem;
+    opacity: 1;
+    max-height: 500px;
+    transition: max-height 0.4s ease, opacity 0.4s ease;
+}
+
+.toggle-content.hidden {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+}
+

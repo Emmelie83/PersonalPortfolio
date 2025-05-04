@@ -1,13 +1,8 @@
-function toggleDescription() {
-    const toggleButtons = document.querySelectorAll(".more-text");
-
-    toggleButtons.forEach(button => {
-        button.addEventListener("click", () => {
-            const description = button.nextElementSibling;
-            description.classList.toggle("hidden");
-            button.textContent = description.classList.contains("hidden") ? "Read more ..." : "Collapse";
-        });
+document.querySelectorAll('.toggle-button').forEach(button => {
+    button.addEventListener('click', () => {
+        const content = button.nextElementSibling;
+        button.classList.toggle('active');
+        content.classList.toggle('hidden');
+        button.setAttribute('aria-expanded', !content.classList.contains('hidden'));
     });
-}
-
-document.addEventListener("DOMContentLoaded", toggleDescription);
+});

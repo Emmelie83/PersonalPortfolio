@@ -3,8 +3,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Emmelie Johansson | Fullstack Developer Java</title>
         <link href="./style.css" rel="stylesheet">
-        
-        <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@700&amp;family=PT+Sans&amp;display=swap" rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Exo+2:wght@700&amp;family=PT+Sans&amp;display=swap"
+            rel="stylesheet">
         <script type="module" src="./index.js"></script>
     </head>
     <body>
@@ -15,7 +16,7 @@
                 <a href="#skills">Skills</a>
                 <a href="#experience">Experience</a>
                 <a href="#projects">Projects</a>
-                <a class="nav-button" href="#contact">Contact</a>
+                <a class="color-button" href="#contact">Contact</a>
             </nav>
             <div class="header-wrapper">
                 <div class="header-text-column">
@@ -26,18 +27,27 @@
                             based in Leipzig, Germany</p>
                     </div>
                     <div class="button-wrapper">
-                        <button class="contact-button">Contact me</button>
-                        <button class="portfolio-button">See my work</button>
+                        <a class="color-button" href="#contact">Contact me</a>
+                        <a class="transparent-button" href="#projects">See my
+                            work</a>
                     </div>
 
                     <div class="social-icons-wrapper">
-                        <a href="https://github.com/Emmelie83"> <img class="social-icon" src="./icons/github.svg" alt="GitHub Profile"></a>
-                        <a href="https://gitlab.com/EmmelieJ"><img class="social-icon" src="./icons/gitlab.svg" alt="GitLab Profile"></a>
-                        <a href="https://www.linkedin.com/in/emmeliejohansson/"><img class="social-icon" src="./icons/linkedin.svg" alt="LinkedIn Profile"></a>
+                        <a href="https://github.com/Emmelie83"> <img
+                                class="social-icon" src="./icons/github.svg"
+                                alt="GitHub Profile"></a>
+                        <a href="https://gitlab.com/EmmelieJ"><img
+                                class="social-icon" src="./icons/gitlab.svg"
+                                alt="GitLab Profile"></a>
+                        <a
+                            href="https://www.linkedin.com/in/emmeliejohansson/"><img
+                                class="social-icon" src="./icons/linkedin.svg"
+                                alt="LinkedIn Profile"></a>
                     </div>
                 </div>
                 <div>
-                    <img class="profile-picture" src="./img/profile-picture.jpg" alt="Profile picture of Emmelie Johansson">
+                    <img class="profile-picture" src="./img/profile-picture.jpg"
+                        alt="Profile picture of Emmelie Johansson">
                 </div>
             </div>
         </header>
@@ -45,9 +55,21 @@
         <main>
             <section id="about">
                 <h2>About Me</h2>
-                <p>I'm Emmelie Johansson, a junior fullstack Java developer based in Leipzig with a passion for clean code, great user experiences, and continuous learning.</p>
-                <p>Originally trained as a translator, I bring strong communication skills and a sharp attention to detail to my work as a developer. Through my education at IT-Högskolan in Gothenburg and additional university courses, I've gained hands-on experience in Java, Spring Boot, and modern web development with technologies like HTML, CSS, JavaScript, and Vue.js.</p>
-                <p>During my six-month traineeship at Finatix GmbH, I contributed to frontend and backend development and explored DevOps tools and workflows. I thrive in agile teams and enjoy creating intuitive, accessible applications that solve real problems.</p>
+                <p>I'm Emmelie Johansson, a junior fullstack Java developer
+                    based in Leipzig with a passion for clean code, great user
+                    experiences, and continuous learning.</p>
+                <p>Originally trained as a translator, I bring strong
+                    communication skills and a sharp attention to detail to my
+                    work as a developer. Through my education at IT-Högskolan in
+                    Gothenburg and additional university courses, I've gained
+                    hands-on experience in Java, Spring Boot, and modern web
+                    development with technologies like HTML, CSS, JavaScript,
+                    and Vue.js.</p>
+                <p>During my six-month traineeship at Finatix GmbH, I
+                    contributed to frontend and backend development and explored
+                    DevOps tools and workflows. I thrive in agile teams and
+                    enjoy creating intuitive, accessible applications that solve
+                    real problems.</p>
             </section>
 
             <section id="education">
@@ -58,155 +80,236 @@
                         <div class="timeline-content">
                             <h3>Fullstack Java Developer</h3>
                             <p>IT-Högskolan, Gothenburg</p>
-                            <p class="more-text">Read more ...</p>
-                            <div class="description hidden">
-                                <ul>
-                                    <li>Focused on Java, OOP, Design Patterns, SOLID principles</li>
-                                    <li>Hands-on experience with JDBC, JPA, REST APIs</li>
-                                    <li>Agile methodologies (Scrum, Kanban)</li>
-                                    <li>Developed secure and scalable web applications with Spring Boot and Thymeleaf</li>
-                                </ul>
+                            <div class="toggle-container">
+                                <button class="toggle-button"
+                                    aria-expanded="false">+</button>
+                                <div class="toggle-content hidden">
+                                    <p>This is the hidden content revealed on
+                                        toggle.</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="timeline-item">
-                        <p class="timeline-date">2022–2024</p>
-                        <div class="timeline-content">
-                            <h3>Freestanding developer courses</h3>
-                            <p>Universities, Sweden</p>
-                            <p class="more-text">Read more ...</p>
-                            <div class="description hidden">
-                                <ul>
-                                    <li>Focused on Java, OOP, Design Patterns, SOLID principles</li>
-                                    <li>Hands-on experience with JDBC, JPA, REST APIs</li>
-                                    <li>Agile methodologies (Scrum, Kanban)</li>
-                                    <li>Developed secure and scalable web applications with Spring Boot and Thymeleaf</li>
-                                </ul>
+                        <div class="timeline-item">
+                            <p class="timeline-date">2022–2024</p>
+                            <div class="timeline-content">
+                                <h3>Freestanding developer courses</h3>
+                                <p>Universities, Sweden</p>
+                                <div class="toggle-container">
+                                    <button class="toggle-button"
+                                        aria-expanded="false">+</button>
+                                    <div class="toggle-content hidden">
+                                        <p>This is the hidden content revealed
+                                            on
+                                            toggle.</p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
 
-                    <div class="timeline-item">
-                        <p class="timeline-date">2010–2012</p>
-                        <div class="timeline-content">
-                            <h3>MA in Translation Studies</h3>
-                            <p>Linnaeus University, Växjö</p>
-                            <p class="more-text">Read more ...</p>
-                            <div class="description hidden">
-                                <ul>
-                                    <li>Focused on Java, OOP, Design Patterns, SOLID principles</li>
-                                    <li>Hands-on experience with JDBC, JPA, REST APIs</li>
-                                    <li>Agile methodologies (Scrum, Kanban)</li>
-                                    <li>Developed secure and scalable web applications with Spring Boot and Thymeleaf</li>
-                                </ul>
+                            <div class="timeline-item">
+                                <p class="timeline-date">2010–2012</p>
+                                <div class="timeline-content">
+                                    <h3>MA in Translation Studies</h3>
+                                    <p>Linnaeus University, Växjö</p>
+                                    <div class="toggle-container">
+                                        <button class="toggle-button"
+                                            aria-expanded="false">+</button>
+                                        <div class="toggle-content hidden">
+                                            <p>This is the hidden content
+                                                revealed
+                                                on toggle.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="timeline-item">
+                                    <p class="timeline-date">2022–2024</p>
+                                    <div class="timeline-content">
+                                        <h3>BA in German</h3>
+                                        <p>Gothenburg univeristy, Sweden</p>
+                                        <div class="toggle-container">
+                                            <button class="toggle-button"
+                                                aria-expanded="false">+</button>
+                                            <div class="toggle-content hidden">
+                                                <p>This is the hidden content
+                                                    revealed on toggle.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
+                        </section>
 
-                    <div class="timeline-item">
-                        <p class="timeline-date">2022–2024</p>
-                        <div class="timeline-content">
-                            <h3>BA in German</h3>
-                            <p>Gothenburg univeristy, Sweden</p>
-                            <p class="more-text">Read more ...</p>
-                            <div class="description hidden">
-                                <ul>
-                                    <li>Focused on Java, OOP, Design Patterns, SOLID principles</li>
-                                    <li>Hands-on experience with JDBC, JPA, REST APIs</li>
-                                    <li>Agile methodologies (Scrum, Kanban)</li>
-                                    <li>Developed secure and scalable web applications with Spring Boot and Thymeleaf</li>
-                                </ul>
+                        <section id="skills">
+                            <h2>Skills</h2>
+                            <div class="skills-wrapper">
+
+                                <div class="skill-category">
+                                    <ul>
+                                        <li><img src="./icons/springboot.svg"
+                                                alt="Spring Boot"> Spring
+                                            Boot</li>
+                                        <li><img
+                                                src="./icons/springsecurity.svg"
+                                                alt="Spring Security"> Spring
+                                            Security</li>
+                                        <li><img src="./icons/maven.svg"
+                                                alt="Maven">
+                                            Maven</li>
+                                        <li><img src="./icons/gradle.svg"
+                                                alt="Gradle">
+                                            Gradle</li>
+                                    </ul>
+                                </div>
+
+                                <div class="skill-category">
+                                    <ul>
+                                        <li><img src="./icons/html.svg"
+                                                alt="HTML">
+                                            HTML</li>
+                                        <li><img src="./icons/css.svg"
+                                                alt="CSS">
+                                            CSS</li>
+                                        <li><img src="./icons/vue.svg"
+                                                alt="Vue.js">
+                                            Vue.js</li>
+                                        <li><img src="./icons/thymeleaf.svg"
+                                                alt="Thymeleaf"> Thymeleaf</li>
+                                    </ul>
+                                </div>
+
+                                <div class="skill-category">
+                                    <ul>
+                                        <li><img src="./icons/docker.svg"
+                                                alt="Docker">
+                                            Docker</li>
+                                        <li><img src="./icons/junit.svg"
+                                                alt="JUnit">
+                                            JUnit</li>
+                                        <li><img src="./icons/git.svg"
+                                                alt="Git">
+                                            Git</li>
+                                        <li><img src="./icons/postman.svg"
+                                                alt="Postman">
+                                            Postman</li>
+                                    </ul>
+                                </div>
+                                <div class="skill-category">
+                                    <ul>
+                                        <li><img src="./icons/java.svg"
+                                                alt="Java">
+                                            Java</li>
+                                        <li><img src="./icons/javascript.svg"
+                                                alt="Javascript">
+                                            Javascript</li>
+                                        <li><img src="./icons/python.svg"
+                                                alt="Python">
+                                            Python</li>
+                                        <li><img src="./icons/kotlin.svg"
+                                                alt="Kotlin">
+                                            Kotlin</li>
+                                    </ul>
+                                </div>
                             </div>
+                        </section>
+
+                        <section id="experience">
+                            <h2>Work experience</h2>
+                            <p class="work-period">2024–2025 </p>
+                            <div class="work-wrapper">
+                                <h3>Traineeship</h3>
+                                <p>Finatix GmbH, Leipzig</p>
+                                <p>Six month traineeship</p>
+                            </div>
+                        </section>
+
+                        <section id="projects">
+                            <h2>My Projects</h2>
+                            <div class="projects-wrapper">
+                                <div class="project">
+                                    <div class="device-frame-light">
+                                        <div class="device-screen-light">
+                                            <img src="./img/scalacinema.png"
+                                                alt="Project Screenshot">
+                                        </div>
+                                    </div>
+                                    <div class="project-information">
+                                        <!-- Info here -->
+                                    </div>
+                                </div>
+
+                                <div class="project reverse">
+                                    <div class="device-frame-light">
+                                        <div class="device-screen-light">
+                                            <img src="./img/climbingapp.png"
+                                                alt="Project Screenshot">
+                                        </div>
+                                    </div>
+                                    <div class="project-information">
+                                        <!-- Info here -->
+                                    </div>
+                                </div>
+
+                                <div class="project">
+                                    <div class="device-frame-light">
+                                        <div class="device-screen-light">
+                                            <img src="./img/onsight.png"
+                                                alt="Project Screenshot">
+                                        </div>
+                                    </div>
+                                    <div class="project-information">
+                                        <!-- Info here -->
+                                    </div>
+                                </div>
+
+                                <div class="project reverse">
+                                    <div class="device-frame-light">
+                                        <div class="device-screen-light">
+                                            <img src="./img/rovarspraket.png"
+                                                alt="Project Screenshot">
+                                        </div>
+                                    </div>
+                                    <div class="project-information">
+                                        <!-- Info here -->
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section id="contact">
+                            <h2>Get in touch</h2>
+                            <div class="contact-section-wrapper">
+                                <div class="contact-information">
+                                    <p id="phone">+49 151 677 25 898</p>
+                                    <p id="mail">info@emmeliejohansson.com</p>
+                                </div>
+                                <form class="contact-form">
+                                    <input class="form-input" type="text"
+                                        name="name"
+                                        placeholder="Your Name" required>
+                                    <input class="form-input" type="email"
+                                        name="email"
+                                        placeholder="Your Email" required>
+                                    <textarea class="form-input" name="message"
+                                        rows="4"
+                                        placeholder="Your Message"
+                                        required></textarea>
+                                    <button class="transparent-button"
+                                        type="submit">Submit</button>
+                                </form>
+                            </div>
+                        </section>
+                    </main>
+                    <footer>
+                        <p>Copyright © Emmelie Johansson 2025 </p>
+                        <div class="social-icons-wrapper">
+                            <img class="social-icon" src="./icons/github.svg"
+                                alt="GitHub Profile">
+                            <img class="social-icon" src="./icons/gitlab.svg"
+                                alt="GitLab Profile">
+                            <img class="social-icon" src="./icons/linkedin.svg"
+                                alt="LinkedIn Profile">
                         </div>
-                    </div>
-                </div>
-            </section>
+                    </footer>
 
-            <section id="skills">
-                <h2>Skills</h2>
-                <div class="skills-wrapper">
-                    
-                    <div class="skill-category">
-                    <ul>
-                        <li><img src="./icons/springboot.svg" alt="Spring Boot"> Spring Boot</li>
-                        <li><img src="./icons/springsecurity.svg" alt="Spring Security"> Spring Security</li>
-                        <li><img src="./icons/maven.svg" alt="Maven"> Maven</li>
-                        <li><img src="./icons/gradle.svg" alt="Gradle"> Gradle</li>
-                    </ul>
-                    </div>
-
-                    <div class="skill-category">
-                    <ul>
-                        <li><img src="./icons/html.svg" alt="HTML"> HTML</li>
-                        <li><img src="./icons/css.svg" alt="CSS"> CSS</li>
-                        <li><img src="./icons/vue.svg" alt="Vue.js"> Vue.js</li>
-                        <li><img src="./icons/thymeleaf.svg" alt="Thymeleaf"> Thymeleaf</li>
-                    </ul>
-                    </div>
-
-                    <div class="skill-category">
-                    <ul>
-                        <li><img src="./icons/docker.svg" alt="Docker"> Docker</li>
-                        <li><img src="./icons/junit.svg" alt="JUnit"> JUnit</li>
-                        <li><img src="./icons/git.svg" alt="Git"> Git</li>
-                        <li><img src="./icons/postman.svg" alt="Postman"> Postman</li>
-                    </ul>
-                    </div>
-                    <div class="skill-category">
-                    <ul>
-                        <li><img src="./icons/java.svg" alt="Java"> Java</li>
-                        <li><img src="./icons/javascript.svg" alt="Javascript"> Javascript</li>
-                        <li><img src="./icons/python.svg" alt="Python"> Python</li>
-                        <li><img src="./icons/kotlin.svg" alt="Kotlin"> Kotlin</li>
-                    </ul>
-                    </div>
-                </div>
-            </section>
-                
-            <section id="experience">
-                <h2>Work experience</h2>
-                <p class="work-period">2024–2025 </p>
-                <div class="work-wrapper">
-                            <h3>Traineeship</h3>
-                            <p>Finatix GmbH, Leipzig</p>
-                            <p>Six month traineeship</p>
-            </section>
-
-            <section id="projects">
-                <h2>Projects</h2>
-                <div class="project-wrapper">
-                    <img id="rovarspraket" src="./icons/rovarspraket.png" alt="Rovarspraket">
-                </div>
-                <div>
-                    <img id="baktakt" src="./icons/baktakt.png" alt="Baktakt">
-                </div>
-            </section>
-
-            <section id="contact">
-                <h2>Get in touch</h2>
-                <div class="contact-section-wrapper">
-                    <div class="contact-information">
-                        <p id="phone">+49 151 677 25 898</p>
-                        <p id="mail">info@emmeliejohansson.com</p>
-                    </div>
-                    <form class="contact-form">
-                        <input class="form-input" type="text" name="name" placeholder="Your Name" required>
-                        <input class="form-input" type="email" name="email" placeholder="Your Email" required>
-                        <textarea class="form-input" name="message" rows="4" placeholder="Your Message" required></textarea>
-                        <button class="submit-button" type="submit">Submit</button>
-                    </form>
-                </div>
-            </section>
-        </main>
-        <footer>
-            <p>Copyright © Emmelie Johansson 2025 </p>
-            <div class="social-icons-wrapper">
-                <img class="social-icon" src="./icons/github.svg" alt="GitHub Profile">
-                <img class="social-icon" src="./icons/gitlab.svg" alt="GitLab Profile">
-                <img class="social-icon" src="./icons/linkedin.svg" alt="LinkedIn Profile">
-            </div>
-        </footer>
-    </body>
-</html>
-
+                </body></html>
