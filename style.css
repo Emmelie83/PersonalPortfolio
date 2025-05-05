@@ -2,7 +2,7 @@ body {
     background-color: #10101A;
     color: #E0E0E0;
     font-family: 'PT Sans', sans-serif;
-    font-size: 18px;
+    font-size: 19px;
 }
 
 html {
@@ -92,10 +92,14 @@ nav a:hover {
 }
 
 .header-wrapper {
-    margin: 8rem 8rem 0 8rem;
+    height: 90%;
     display: flex;
     gap: 8rem;
     align-items: center;
+    max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 6rem;
+
 }
 
 .header-text-column {
@@ -135,17 +139,23 @@ nav a:hover {
 }
 
 main {
-    margin: 0rem 8rem 5rem 8rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 6rem;
 }
 
 section {
     padding: .5rem 0;
     margin-bottom: 2rem;
-    line-height: 2rem;
+    line-height: 1.6rem;
 }
 
 #about {
-    max-width: 700px;
+    width: 60%;
+}
+
+#first-paragraph {
+    line-height: 0.5rem;
 }
 
 .timeline {
@@ -282,19 +292,16 @@ section {
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 8px;
-    padding: 0; /* Remove padding to avoid extra space */
+    padding: 0.5rem;
     background: #f8f8f8;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
 }
 
 .device-screen-light {
-    width: 100%;
-    max-width: 600px;
-    aspect-ratio: 16 / 10;
-    border-radius: 8px; /* Match outer frame if needed */
+    border-radius: 4px;
     overflow: hidden;
     background: #fff;
-    border: none; /* Remove inner border to match image size */
+    border: 1px solid #ddd;
 }
 
 .device-screen-light img,
