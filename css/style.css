@@ -40,24 +40,8 @@ p {
     margin: 0 0 1em 0;
 }
 
-.custom-list {
-    list-style: none;
-    padding: .5rem 0;
-}
-
-.custom-list li {
-    display: flex;
-    align-items: flex-start;
-    gap: 0.5rem;
-    margin-left: 1.5rem;
-}
-
-.bullet {
-    flex-shrink: 0;
-}
-
-.text {
-    flex: 1;
+em {
+    font-style: italic;
 }
 
 strong {
@@ -251,23 +235,31 @@ nav a:hover {
     margin-left: 1.5rem;
 }
 
-.skills-wrapper {
-    display: flex;
-    gap: 6rem;
+.education-content {
+    margin-top: .5rem;
+    margin-left: 1.5rem;
+    font-size: 16px;
 }
 
-.skill-category ul {
+.custom-list {
     list-style: none;
-    padding: 0;
+    padding: .5rem 0;
 }
 
-.skill-category li {
+.custom-list li {
     display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    padding: 1rem 0;
-    font-size: 18px;
-    white-space: nowrap;
+    align-items: flex-start;
+    gap: 0.8rem;
+    margin-left: 1.5rem;
+}
+
+.bullet {
+    flex-shrink: 0;
+}
+
+.text {
+    flex: 1;
+    font-size: 16px;
 }
 
 .toggle-container {
@@ -279,7 +271,7 @@ nav a:hover {
     border: none;
     font-size: 1.5rem;
     margin-left: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
     cursor: pointer;
     transition: transform 0.3s ease;
     color: #E0E0E0;
@@ -300,6 +292,26 @@ nav a:hover {
     overflow: hidden;
 }
 
+.skills-wrapper {
+    display: flex;
+    gap: 6rem;
+}
+
+.skill-category ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skill-category li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 0;
+    font-size: 18px;
+    white-space: nowrap;
+
+}
+
 .work-period {
     font-weight: bold;
     margin-bottom: 0.2rem;
@@ -312,7 +324,7 @@ nav a:hover {
 
 .work-wrapper p {
     margin: 0.2rem 0;
-    max-width: 300px;
+    max-width: 500px;
 }
 
 .projects-wrapper {
