@@ -40,6 +40,26 @@ p {
     margin: 0 0 1em 0;
 }
 
+.custom-list {
+    list-style: none;
+    padding: .5rem 0;
+}
+
+.custom-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    margin-left: 1.5rem;
+}
+
+.bullet {
+    flex-shrink: 0;
+}
+
+.text {
+    flex: 1;
+}
+
 strong {
     font-weight: 800;
 }
@@ -125,9 +145,8 @@ nav a:hover {
     height: 4.5rem;
     background-color: #10101A;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-        z-index: 1000;
-
-        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1000;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .navbar.sticky:hover {
@@ -240,7 +259,6 @@ nav a:hover {
 .skill-category ul {
     list-style: none;
     padding: 0;
-
 }
 
 .skill-category li {
@@ -261,6 +279,7 @@ nav a:hover {
     border: none;
     font-size: 1.5rem;
     margin-left: 1rem;
+    margin-bottom: 1rem;
     cursor: pointer;
     transition: transform 0.3s ease;
     color: #E0E0E0;

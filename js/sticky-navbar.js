@@ -11,7 +11,6 @@ let navPos = getNavPos();
 function handleScroll() {
     const scrollPos = window.scrollY;
 
-
     if (scrollPos > navPos && !isSticky) {
         navbar.classList.add("sticky");
         contactButton.classList.remove("color-button");
