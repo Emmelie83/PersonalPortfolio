@@ -191,10 +191,10 @@ nav a:hover {
     line-height: 0.5rem;
 }
 
-.timeline {
+.timeline-wrapper {
     border-left: 3px solid #585C64;
     padding-left: 2rem;
-    margin-top: 3rem;
+    margin-top: 4rem;
 }
 
 .timeline-item {
@@ -292,6 +292,8 @@ nav a:hover {
 .skills-wrapper {
     display: flex;
     gap: 6rem;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
 }
 
 .skill-category ul {
@@ -316,7 +318,7 @@ nav a:hover {
 }
 
 .projects-wrapper {
-    margin-top: 4rem;
+    margin-top: 6rem;
 }
 
 .project.reverse {
