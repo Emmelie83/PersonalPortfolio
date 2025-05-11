@@ -290,7 +290,8 @@ nav a:hover {
 }
 
 .skills-wrapper {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
     gap: 6rem;
     margin-bottom: 4rem;
     margin-top: 4rem;
@@ -414,4 +415,110 @@ footer {
     gap: 1rem;
     margin-bottom: 2rem;
     padding-top: 2rem;
+}
+
+@media (max-width: 1024px) {
+
+    main,
+    .header-wrapper {
+        padding: 0 3rem;
+    }
+
+    .skills-wrapper {
+        gap: 3rem;
+    }
+
+    .project {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-section-wrapper {
+        flex-direction: column;
+        padding: 2rem 3rem;
+    }
+
+    .contact-form {
+        min-width: 100%;
+    }
+}
+
+/* Tablets und große Smartphones (max-width: 768px) */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+
+    nav {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-right: 0;
+    }
+
+    .header-wrapper {
+        flex-direction: column;
+        gap: 3rem;
+        text-align: center;
+    }
+
+    .profile-picture {
+        width: 200px;
+    }
+
+    .button-wrapper {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #about {
+        width: 100%;
+    }
+
+    .toggle-container {
+        width: 100%;
+    }
+
+    .skills-wrapper {
+        gap: 2rem;
+    }
+
+    .projects-wrapper {
+        margin-top: 3rem;
+    }
+}
+
+/* Kleine Smartphones (max-width: 480px) */
+@media (max-width: 480px) {
+    body {
+        font-size: 16px;
+    }
+
+    .color-button,
+    .transparent-button {
+        padding: 12px 20px;
+        font-size: 15px;
+    }
+
+    .social-icons-wrapper {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 0.9rem;
+    }
+
+    footer {
+        text-align: center;
+        padding: 1rem;
+    }
 }
