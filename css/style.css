@@ -178,6 +178,7 @@ nav a:hover {
 }
 
 .profile-picture {
+    order: 2;
     width: 300px;
     border-radius: 4px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
@@ -199,7 +200,7 @@ nav a:hover {
 
 .timeline-item {
     position: relative;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .timeline-item::before {
@@ -230,12 +231,6 @@ nav a:hover {
 .timeline-content p {
     margin: 0 0.5rem;
     margin-left: 1.5rem;
-}
-
-.education-content {
-    padding-top: .5rem;
-    margin-left: 1.5rem;
-    font-size: 16px;
 }
 
 .custom-list {
@@ -417,11 +412,38 @@ footer {
     padding-top: 2rem;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1170px) {
 
-    main,
     .header-wrapper {
-        padding: 0 3rem;
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 920px) {
+
+    header {
+        height: 100%;
+        margin-bottom: 3rem;
+    }
+
+    .header-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-text-column {
+        display: flex;
+        flex-direction: column;
+        order: 2;
+    }
+
+    .profile-picture {
+        margin: 3rem auto;
+        justify-self: center;
+        width: 300px;
+        border-radius: 4px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
     }
 
     .skills-wrapper {
@@ -444,6 +466,8 @@ footer {
 
 /* Tablets und große Smartphones (max-width: 768px) */
 @media (max-width: 768px) {
+
+
     h1 {
         font-size: 40px;
     }
@@ -463,13 +487,10 @@ footer {
         margin-right: 0;
     }
 
-    .header-wrapper {
-        flex-direction: column;
-        gap: 3rem;
-        text-align: center;
-    }
+
 
     .profile-picture {
+        order: 1;
         width: 200px;
     }
 
